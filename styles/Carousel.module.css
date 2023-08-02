@@ -1,0 +1,27 @@
+.container{
+    margin-top: 2rem;
+}
+
+.slide{
+    border-radius: 0.5rem;
+}
+
+.image{
+    border-radius: 0.5rem;
+}
+
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 20 !important;
+  width: 100%;
+}
+
+
+  
+
+
+

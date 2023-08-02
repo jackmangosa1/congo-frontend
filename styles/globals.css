@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  overflow-x:hidden;
+}
+
+:root{
+ --themeBlue: #3f71d4;
+ --themeRed: #cd2441;
+ --themeGray: gray;
+ --themeYellow: #fbc834;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  color: black !important;
+  width: 1rem !important;
+  height: 1rem !important;
+
+}
+
+.swiper-pagination-bullet-active {
+   background-color: var(--themeBlue) !important; 
+  }
+
+.swiper-pagination-bullet{
+  width: 0.7rem !important;
+  height: 0.7rem !important;
+}
+

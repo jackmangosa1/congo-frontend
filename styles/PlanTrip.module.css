@@ -1,0 +1,44 @@
+.container{
+    padding: 1.5rem;
+}
+
+.title{
+    display: grid;
+    place-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+    font-weight: bold;
+}
+
+.bigImage{
+    margin-top: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
+}
+
+.subtitle{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.7rem;
+}
+
+.articles{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.article{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.articleImage{
+    border-radius: 0.5rem;
+}
+
+.articleTitle{
+    font-weight: 600;
+}

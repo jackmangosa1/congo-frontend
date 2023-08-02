@@ -1,0 +1,48 @@
+.container{
+    padding: 1.5rem;
+}
+
+.title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+}
+
+.categories{
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+.category{
+    background-color: rgb(238, 237, 237);
+    padding: 0.5rem 1rem;
+    border-radius: 2rem;
+}
+
+
+
+.places{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.slide{
+    position: relative;
+}
+.placeTitle{
+    position: absolute;
+    top: 20rem;
+    left: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.5rem;
+    color: white;
+}

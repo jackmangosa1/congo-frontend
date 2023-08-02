@@ -1,0 +1,44 @@
+.trips{
+    margin-top: 3rem;
+}
+
+.image{
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.title{
+    font-size: 1.2rem;
+    color: var(--themeBlue);
+    cursor: pointer;
+}
+.categories{
+    margin-top: 0.5rem;
+    display: flex;
+    gap: 0.5rem;
+    color: var(--themeGray);
+    margin-bottom: 0.5rem;
+} 
+
+.category:not(:last-child)::after{
+    content: '  •';
+}
+
+.button{
+    margin-top: 1rem;
+    margin-left: 10rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--themeBlue);
+  }
+
+
+
+
+
+

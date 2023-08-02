@@ -1,0 +1,35 @@
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+    background-color: var(--themeBlue);
+    color: white;
+}
+
+.logo{
+    margin: 0 auto;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+.accordionPanel{
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.link{
+    color: white;
+}
+
+.goUpIcon{
+    background-color: var(--themeYellow);
+    border-radius: 50%;
+    padding: 0.5rem;
+    position: absolute;
+    top: -1.5rem;
+    right: 3rem;
+}
+
