@@ -32,7 +32,7 @@ const Cards = ({items, categories, title }) => {
                 className={styles.places}
             >
             {items.map( item => (
-                <SwiperSlide className={styles.slide} onClick={() =>router.push(item.link && item.link)}>
+                <SwiperSlide className={styles.slide} onClick={() => item.link && router.push(item.link) }>
                     <Image src={item.image} width={350} height={400}/>
                     <span className={styles.placeTitle}>{item.title}</span>
                     
