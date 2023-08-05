@@ -59,7 +59,7 @@ const thingsToDo = [
         </li>
         <li className={styles.item}>Explore</li>
       </ul>
-      <Drawer opened={openedDrawer1} onClose={closeDrawer1} position="right">
+      <Drawer opened={openedDrawer1} onClose={closeDrawer1} position="right" size="100%">
         <div className={styles.categoryContainer}>
           {inspirationData.map( category =>{
             return(
@@ -73,7 +73,7 @@ const thingsToDo = [
         </div>
         
       </Drawer>
-      <Drawer opened={openedDrawer2} onClose={closeDrawer2} position="right">
+      <Drawer opened={openedDrawer2} onClose={closeDrawer2} position="right" size="100%">
         <div className={styles.categoryContainer}>
             {placesToGo.map( category =>{
               return(
@@ -86,7 +86,7 @@ const thingsToDo = [
             })}
           </div>
       </Drawer>
-      <Drawer opened={openedDrawer3} onClose={closeDrawer3}  position="right">
+      <Drawer opened={openedDrawer3} onClose={closeDrawer3}  position="right" size="100%">
         <div className={styles.categoryContainer}>
               {thingsToDo.map( category =>{
                 return(
@@ -99,7 +99,7 @@ const thingsToDo = [
               })}
             </div>
       </Drawer>
-      <Drawer opened={openedDrawer4} onClose={closeDrawer4}  position="right">
+      <Drawer opened={openedDrawer4} onClose={closeDrawer4}  position="right" size="100%">
         {/* Drawer 4 content */}
       </Drawer>
     </div>

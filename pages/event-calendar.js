@@ -3,9 +3,9 @@ import Festival from "../public/festival.jpg";
 import Image from "next/image";
 import SquareCard from "../components/SquareCard";
 import { UilSearch } from '@iconscout/react-unicons';
-import { Select, Input, Group } from '@mantine/core';
+import { Select, TextInput } from '@mantine/core';
 import { Calendar } from '@mantine/dates';
-import { useState, useRef, useEffect } from "react";
+import { useState } from "react";
 import Events from "../components/Events";
 import Cards from "../components/Cards"
 
@@ -19,28 +19,9 @@ const EventCalender = () => {
         {id: 4, title: 'Kisangani', image: '/placesToGo/Kisangani.jpg'},
       ]
     const [isCalendarVisible, setIsCalenderVisible] = useState(false)
-    const calendarRef = useRef()
-
-    const toggleCalendarVisibility = () =>{
+    const showCalendar = () =>{
         setIsCalenderVisible(prevState => !prevState)
     }
-
-   
-    const handleOutsideClick = (e) =>{
-        if(calendarRef.current && !calendarRef.current.contains(e.target)){
-            setIsCalenderVisible(false)
-        }
-    }
-
-    useEffect( () =>{
-        if(isCalendarVisible) {
-            document.addEventListener('click', handleOutsideClick, true)
-        } 
-
-        return () => {
-            document.removeEventListener('click', handleOutsideClick, true)
-        }
-    }, [isCalendarVisible])
 
 
 
@@ -71,7 +52,7 @@ const EventCalender = () => {
             />
             <span>Featured Events</span>
             <div className={styles.eventFiltersContainer}>
-                <Input
+                <TextInput
                 icon={<UilSearch size="17"/>}
                 placeholder="Keyword search"
                 />
@@ -87,17 +68,13 @@ const EventCalender = () => {
                     ]}
                     className={styles.select}
                 />
-                    <Select
-                        placeholder="Date Range"
-                        data={[]}
-                        className={styles.select}
-                        onClick={toggleCalendarVisibility}
-                        
-                    />
+                <TextInput
+                    placeholder="Date Range"
+                
+                    onClick={showCalendar}
+                />
                 {isCalendarVisible && (
-                    <div ref={calendarRef}>
-                        <Calendar className={styles.calendar}/>
-                    </div> 
+                    <Calendar/>
                 )}
             </div>
             <Events/>

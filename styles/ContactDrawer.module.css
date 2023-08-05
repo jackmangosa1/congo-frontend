@@ -1,0 +1,53 @@
+.container{
+    position: relative;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    color: var(--themeBlue);
+    margin-bottom: 2rem;
+}
+
+.title::after{
+    position: absolute;
+    top: 3rem;
+    content: '';
+    height: 0.01rem;
+    width: 90%;
+    background-color: #e7e7e7;
+    margin-top: 3rem;
+}
+
+.row{
+    display: flex;
+    gap: 1rem;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    padding: 0 3rem;
+    gap: 1rem;
+}
+.mantine-Input.Wrapper-label{
+    color: var(--themeBlue)!important;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--themeBlue);
+    margin-top: 1rem;
+  }
+
+ 

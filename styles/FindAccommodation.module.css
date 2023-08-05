@@ -1,0 +1,17 @@
+.title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1rem;
+}
+
+.description{
+    display: flex;
+    justify-content: center;
+    color: var(--themeGray);
+    padding: 0 1.5rem;
+    margin-bottom: 2rem;
+}
+

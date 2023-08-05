@@ -20,6 +20,8 @@ body {
  --themeRed: #cd2441;
  --themeGray: gray;
  --themeYellow: #fbc834;
+ --themeGrayBlue: #f3f4f6;
+ --themeGrayBg: rgb(248, 248, 248);
 }
 
 .swiper-button-next,

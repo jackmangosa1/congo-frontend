@@ -2,6 +2,7 @@ import styles from "../styles/FindTravelAgency.module.css"
 import Image from "next/image";
 import Agent from "../public/agent.jpg";
 import Agency from "../components/Agency";
+
 const FindTravelAgency = () => {
     return ( 
         <div className={styles.container}>
