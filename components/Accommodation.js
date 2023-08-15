@@ -62,7 +62,7 @@ const Accommodation = () => {
                     <div className={styles.redirection}>
                         <Image src={accommodation.smallImage} height={100} width={150}/>
                         <div className={styles.rightSide}>
-                            <span>Eos By SkyCity</span>
+                            <span>{accommodation.title}</span>
                             <Link href={accommodation.link} target="_blank">
                                 <div className={styles.price}>
                                     From <span>{accommodation.price}</span>

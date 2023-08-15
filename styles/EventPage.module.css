@@ -1,0 +1,46 @@
+.container > :not(:first-child){
+    padding: 1.5rem;
+}
+.title{
+    display: grid;
+    place-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+}
+.venue{
+    margin-top: -2rem;
+    display: grid;
+    place-items: center;
+}
+.date{
+    margin-top: -3rem;
+    display: grid;
+    place-items: center;
+    color: var(--themeGray);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10rem;
+    width: max-content;
+    height: 3rem;
+    padding: 0 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: var(--themeBlue);
+  }
+  .description{
+    color: var(--themeGray);
+  }
+.readMore{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: -3rem;
+    color: var(--themeBlue);
+}

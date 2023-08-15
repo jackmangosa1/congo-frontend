@@ -54,6 +54,7 @@
 
 .main p{
     margin-top: 1rem;
+    color: var(--themeGray);
 }
 
 .videoContainer{

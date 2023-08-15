@@ -22,7 +22,7 @@ const Header = () =>{
              }
             <Image src={Logo} height={40} width={100} alt="logo" onClick={() =>router.push('/')}/>
             <div className={styles.navElements}>
-                <Image src={Congo} alt="congo-map" height={30} width={30}/>
+                <Image src={Congo} alt="congo-map" height={30} width={30} onClick={()=> router.push('/explore')}/>
                
                 <UilHeart size="30"/>
             </div>

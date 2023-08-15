@@ -9,6 +9,12 @@ import Gallerie from "../components/Gallerie";
 
 const  TravelInspiration = () => {
 
+    const QuizData = {
+        image: '/Quiz.jpg',
+        title: 'Find your perfect holiday match',
+        description: 'Here’s a list of Ruby’s curated holiday highlights picked just for you!',
+        callToAction: 'Take quiz'
+      }
     const [showControl, setShowControl] = useState(false)
     const videoRef = useRef(null);
 
@@ -64,7 +70,7 @@ const  TravelInspiration = () => {
                 </div>
             </div>
 
-            <SquareCard/>
+            <SquareCard image={QuizData.image} title={QuizData.title} description={QuizData.description} callToAction={QuizData.callToAction}/>
             <Cards items={thingsToDo} title="Start your next Adventure"/>
             <Cards items={placesToGo} title="Explore host destinations"/>
             <Gallerie/>

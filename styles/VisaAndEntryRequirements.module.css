@@ -1,0 +1,44 @@
+.container > :not(:first-child){
+    padding: 1.5rem;
+}
+.title{
+    display: grid;
+    place-items: center;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.3rem;
+}
+.description{
+    margin-top: -2rem;
+    color: var(--themeBlue);
+}
+.disclaimer{
+    margin-top: -2rem;
+}
+.tips{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--themeGrayBg);
+    padding: 2rem;
+    margin-bottom: 3rem;
+}
+.tips > :nth-child(1){
+    font-weight: bold;
+}
+
+.accordionContainer > .title{
+    margin-bottom: 2rem;
+}
+
+.accordionControl{
+    border: 1px solid rgb(238, 238, 238);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    margin-bottom: 1rem;
+    background-color: white;
+    color: black;
+}
+.accordionPanel{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}

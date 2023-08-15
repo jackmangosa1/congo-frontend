@@ -13,10 +13,10 @@ import Hero from '../components/Hero'
 
 export default function Home() {
   const placesToGo = [
-    {id: 1, title: 'Kinshasa', image: '/placesToGo/kinshasa.jpg'},
-    {id: 2, title: 'Goma', image: '/placesToGo/Goma.jpg' },
-    {id: 3, title: 'Lubumbashi', image: '/placesToGo/Lubumbashi.jpg'},
-    {id: 4, title: 'Kisangani', image: '/placesToGo/Kisangani.jpg'},
+    {id: 1, title: 'Kinshasa', image: '/placesToGo/kinshasa.jpg', link: '/kinshasa/'},
+    {id: 2, title: 'Goma', image: '/placesToGo/Goma.jpg', link: '/goma/'},
+    {id: 3, title: 'Lubumbashi', image: '/placesToGo/Lubumbashi.jpg', link:'/lubumbashi/'},
+    {id: 4, title: 'Kisangani', image: '/placesToGo/Kisangani.jpg', link:'kisangani'},
   ]
 
 const placesCategories = [
@@ -28,9 +28,8 @@ const placesCategories = [
 ]
 
 const thingsToDo = [
-  {id: 1, title: 'Events', image: '/thingsToDo/festival.jpg'},
-  {id: 2, title: 'Food', image: '/thingsToDo/food.jpg' },
-  {id: 3, title: 'Art', image: '/thingsToDo/art.jpg'},
+  {id: 1, title: 'Events', image: '/thingsToDo/festival.jpg', link:'/event-calendar'},
+  {id: 2, title: 'Food', image: '/thingsToDo/food.jpg', link: '/food-and-drinks' },
 ]
 
 const thingsCategories = [

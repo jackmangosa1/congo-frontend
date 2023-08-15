@@ -1,7 +1,7 @@
 import styles from "../../styles/WhereToStay.module.css"
 import Image from "next/image";
 import Accommodation from "../../components/Accommodation";
-const WhereToSaty = () => {
+const WhereToStay = () => {
    
     return (  
         <div>
@@ -17,4 +17,4 @@ const WhereToSaty = () => {
     );
 }
  
-export default WhereToSaty;
+export default WhereToStay;
