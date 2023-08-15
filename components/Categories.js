@@ -3,9 +3,10 @@ import styles from "../styles/Categories.module.css"
 import { UilAngleRightB } from '@iconscout/react-unicons';
 import { useRouter } from "next/router";
 
+
+
 const Categories = () => {
     const router = useRouter()
-
     const inspirationData = [
         {id: 1, title: 'Come and say Mbote!', image: '/inspiration/animals.jpg', link: '/travel-inspiration'},
         {id: 2, title: "What's on", image: '/inspiration/beach.jpg', link: '/event-calendar' },
@@ -16,12 +17,13 @@ const Categories = () => {
         <div className={styles.container}>
             {inspirationData.map(item =>(
                 <div className={styles.category} onClick={() => router.push(item.link)}>
-                     <Image src={item.image} alt="categoty-image" height={130} width={200} className={styles.categoryImage}/>
-                     <div className={styles.categoryTitleContainer}>
+                    <div className={styles.categoryImageContainer}>
+                        <Image src={item.image} alt="categoty-image" height={130} width={200} className={styles.categoryImage}/>
                         <span className={styles.categoryTitle}>{item.title}</span>
-                        <UilAngleRightB size="30"/>
-                     </div>
+                        
+                    </div>
                      
+                    <UilAngleRightB size="30"  className={styles.categoryIcon}/>
                 </div>
                
             ))}

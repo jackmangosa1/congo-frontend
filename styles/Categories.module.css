@@ -4,26 +4,71 @@
     gap: 1rem;
     padding: 1.5rem ;
 }
-
 .category{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+.categoryImageContainer{
     display: flex;
     gap: 1rem;
     align-items: center;
-    cursor: pointer;
 }
 
 .categoryImage{
     border-radius: 1rem;
-}
-
-.categoryTitleContainer{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: calc(10vw + 10rem);
+    height: calc(10vw + 5rem);
 }
 
 .categoryTitle{
    font-family: 'Bebas Neue', sans-serif; 
-    font-size: 1.5rem;
-    font-weight: 400;
+   font-size: 1.5rem;
+   font-weight: 400;
+}
+
+
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+    .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .categoryTitle{
+        position: absolute;
+        bottom: 1rem;
+        left: 1rem;
+        color: white;
+    }
+    .categoryIcon{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1065px) {
+    .categoryImage{
+        width: calc(10vw + 13rem);
+        height: calc(10vw + 7rem);
+    } 
+}
+
+@media screen and (min-width: 1050px) {
+    .categoryImage{
+        width: calc(10vw + 15rem);
+        height: calc(10vw + 7rem);
+    } 
+}
+
+@media screen and (min-width: 1278px) {
+    .categoryImage{
+        width: calc(10vw + 17rem);
+        height: calc(10vw + 8rem);
+    }
+    .categoryTitle{
+        font-size: 2rem;
+    }
+    
 }

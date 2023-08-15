@@ -18,3 +18,17 @@
     gap: 0.5rem;
 }
 
+/* TABLET */
+@media screen and (min-width: 768px) {
+    
+}
+
+/* LAPTOP */
+@media screen and (min-width: 992px) {
+    
+}
+
+/* LARGER SCREENS */
+@media screen and (min-width: 1200px) {
+    
+}
