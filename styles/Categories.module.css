@@ -47,19 +47,24 @@
         display: none;
     }
 }
-
-@media screen and (min-width: 1065px) {
-    .categoryImage{
-        width: calc(10vw + 13rem);
-        height: calc(10vw + 7rem);
-    } 
-}
-
 @media screen and (min-width: 1050px) {
     .categoryImage{
         width: calc(10vw + 15rem);
         height: calc(10vw + 7rem);
     } 
+    .categoryTitle{
+        font-size: 1.6rem;
+    }
+}
+@media screen and (min-width: 1065px) {
+    .categoryImage{
+        width: calc(10vw + 13rem);
+        height: calc(10vw + 7rem);
+    } 
+    .categoryTitle{
+        font-size: 1.8rem;
+    }
+    
 }
 
 @media screen and (min-width: 1278px) {

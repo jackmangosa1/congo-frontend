@@ -16,12 +16,12 @@ const Hero = () => {
     const router = useRouter()
 
     return ( 
-        <div>
+        <div className={styles.container}>
             <video src="/Congo.mp4" autoPlay loop muted className={styles.heroVideo}/>
             <div className={styles.callToActionButton}>
                         <button className={styles.button} onClick={() => router.push('/travel-inspiration')}>Be inspired</button>
                         <button className={styles.button}>Find your own Adventure</button>
-                        <h1>{width}</h1>
+                        {/* <h1 style={{color: 'white'}}>{width}</h1> */}
             </div>
         </div>
      );
