@@ -3,8 +3,10 @@ import { UilSearch, UilAngleRightB } from '@iconscout/react-unicons';
 import { useDisclosure } from '@mantine/hooks';
 import { Drawer } from '@mantine/core';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 const SideBar = () => {
+  const router = useRouter()
   const [openedDrawer1, { open: openDrawer1, close: closeDrawer1 }] = useDisclosure(false);
   const [openedDrawer2, { open: openDrawer2, close: closeDrawer2 }] = useDisclosure(false);
   const [openedDrawer3, { open: openDrawer3, close: closeDrawer3 }] = useDisclosure(false);
@@ -13,10 +15,9 @@ const SideBar = () => {
 
 
 const inspirationData = [
-  {id: 1, title: 'Discover Congo', image: '/inspiration/animals.jpg'},
-  {id: 2, title: 'Travel Video', image: '/inspiration/beach.jpg' },
-  {id: 3, title: 'Deals and offer', image: '/inspiration/forest.jpg'},
-  {id: 4, title: 'Deals and offer', image: '/inspiration/forest.jpg'},
+  {id: 1, title: 'Say mbote!', image: '/inspiration/animals.jpg', link:'/travel-inspiration'},
+  {id: 2, title: 'Discover Congo', image: '/Rwenzori.jpg', link: ''},
+  {id: 3, title: 'Deals and offer', image: '/Tchegera.jpg', link: '/deals-and-travel-packages'},
 ]
 
 const placesToGo = [
@@ -57,7 +58,9 @@ const thingsToDo = [
           Plan your trip
           <UilAngleRightB size="30" />
         </li>
-        <li className={styles.item}>Explore</li>
+        <li className={styles.item} onClick={() => router.push('/explore')}>
+          Explore
+        </li>
       </ul>
       <Drawer opened={openedDrawer1} onClose={closeDrawer1} position="right" size="100%">
         <div className={styles.categoryContainer}>

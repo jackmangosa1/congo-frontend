@@ -30,6 +30,7 @@ const placesCategories = [
 const thingsToDo = [
   {id: 1, title: 'Events', image: '/thingsToDo/festival.jpg', link:'/event-calendar'},
   {id: 2, title: 'Food', image: '/thingsToDo/food.jpg', link: '/food-and-drinks' },
+  {id: 2, title: 'Food', image: '/thingsToDo/food.jpg', link: '/food-and-drinks' },
 ]
 
 const thingsCategories = [

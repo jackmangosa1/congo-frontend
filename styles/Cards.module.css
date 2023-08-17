@@ -1,12 +1,10 @@
 .container{
     padding: 1.5rem;
 }
-
 .title{
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.3rem;
 }
-
 .categories{
     margin-top: 2rem;
     display: flex;
@@ -14,29 +12,29 @@
     gap: 1rem;
     justify-content: space-between;
     align-items: center;
-
 }
-
-
-
-
 .category{
     background-color: rgb(238, 237, 237);
     padding: 0.5rem 1rem;
     border-radius: 2rem;
+    cursor: pointer;
 }
-
-
-
+.category:hover{
+    background-color: var(--themeBlue);
+    color: white;
+}
 .places{
-    margin-top: 1rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
+    margin-top: 2rem;
 }
+
 
 .slide{
     position: relative;
+}
+.placeImage{
+    border-radius: 1rem;
+    width: calc(10vw + 18rem);
+    height: calc(10vw + 25rem);
 }
 .placeTitle{
     padding-right: 1rem;
@@ -46,4 +44,10 @@
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
     color: white;
+}
+
+@media screen and (min-width: 1200px) {
+    .categories{
+        justify-content: flex-start;
+    }
 }

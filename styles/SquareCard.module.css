@@ -4,13 +4,16 @@
 }
 
 .image{
+    width: calc(86vw + 1rem);
+    height: calc(10vw + 20rem);
     border-radius: 1rem;
+    transform: scaleX(-1)
 }
 
 .text{
-    top: 12rem;
     position: absolute;
-    padding: 1rem;
+    bottom: 3rem;
+    padding: 2rem;
     display: flex;
     gap: 0.5rem;
     flex-direction: column;
@@ -36,4 +39,18 @@
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--themeBlue);
+  }
+
+  @media screen and (min-width: 768px) {
+    .image{
+        width: calc(95vw + 0rem);
+    }
+  }
+
+  @media screen and (min-width: 1000px) {
+    .text{
+        font-size: 2rem;
+        bottom: 9rem;
+        left: 3rem;
+    }
   }

@@ -21,7 +21,7 @@ const Hero = () => {
             <div className={styles.callToActionButton}>
                         <button className={styles.button} onClick={() => router.push('/travel-inspiration')}>Be inspired</button>
                         <button className={styles.button}>Find your own Adventure</button>
-                        {/* <h1 style={{color: 'white'}}>{width}</h1> */}
+                        <h1 style={{color: 'white'}}>{width}</h1>
             </div>
         </div>
      );
