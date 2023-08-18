@@ -6,16 +6,14 @@ import { useRouter } from "next/router";
 const PlanTrip = () => {
     const router = useRouter()
     const articles = [
-        {id: 1, title: 'Congolese visa and entry requirements FAQs', image: '/Entry.jpg', link:'/visa-and-entry-requirements'},
+        {id: 1, title: 'Border status and entry information', image: '/Rwenzori.jpg', link: 'deals-and-travel-packages'},
+        {id: 3, title: 'Congolese visa and entry FAQs', image: '/Entry.jpg', link:'/visa-and-entry-requirements'},
         {id: 2, title: 'Deals and travel packages', image: '/inspiration/beach.jpg', link: 'deals-and-travel-packages'},
       ]
 
     return (  
         <div className={styles.container}>
-            <span className={styles.title}>Ready to plan your trip?</span>
-            <Image src={Rwenzori} height={300} width={440} className={styles.bigImage}/>
-            <span className={styles.subtitle}>Border status and entry information</span>
-
+            <div className={styles.title}>Ready to plan your trip</div>
             <div className={styles.articles}>
                 {articles.map( article =>(
                     <div key={article.id} className={styles.article} onClick={() => router.push(article.link)}> 

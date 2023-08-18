@@ -1,7 +1,6 @@
 .container{
     padding: 1.5rem;
 }
-
 .title{
     display: grid;
     place-items: center;
@@ -9,18 +8,11 @@
     font-size: 2.3rem;
     font-weight: bold;
 }
-
-.bigImage{
-    margin-top: 2rem;
-    border-radius: 1rem;
-    margin-bottom: 1rem;
-}
-
 .subtitle{
+    display: block;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.7rem;
 }
-
 .articles{
     margin-top: 2rem;
     display: flex;
@@ -28,18 +20,51 @@
     gap: 2rem;
     cursor: pointer;
 }
-
 .article{
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
     align-items: center;
 }
-
 .articleImage{
     border-radius: 0.5rem;
+    width: calc( 15vw + 10rem);
+    height: calc(20vw + 10rem);
 }
 
 .articleTitle{
     font-weight: 600;
+}
+
+@media screen and (min-width: 998px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .title{
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .articles{
+        margin-top: 0;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .article{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    .articleTitle{
+        font-weight: normal;
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 1220px) {
+   
 }

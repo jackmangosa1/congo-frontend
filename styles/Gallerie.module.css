@@ -25,6 +25,7 @@
 .image{
     border-radius: 0.5rem;
     z-index: 0;
+    width: calc(5vw + 10rem);
 }
 
 .icon{
@@ -33,10 +34,12 @@
     right: 1.5rem;
     z-index: 1;
 }
-
+.buttonContainer{
+    display: flex;
+    justify-content: center;
+}
 .button{
     margin-top: 1rem;
-    margin-left: 10rem;
     padding: 1rem;
     border-radius: 0.5rem;
     border: none;
@@ -45,4 +48,10 @@
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--themeBlue);
+  }
+
+  @media screen and (min-width: 600px) {
+    .title{
+        display: block;
+    }
   }

@@ -10,6 +10,10 @@ const Gallerie = () => {
         {id: 4, image: '/Grid/4.jpg' },
         {id: 5, image: '/Grid/9.jpg' },
         {id: 6, image: '/Grid/2.jpg' },
+        {id: 7, image: '/Grid/3.jpg' },
+        {id: 8, image: '/Grid/4.jpg' },
+        {id: 9, image: '/Grid/9.jpg' },
+        {id: 10, image: '/Grid/1.jpg' },
     ]
     return ( 
         <div className={styles.container}>
@@ -23,7 +27,10 @@ const Gallerie = () => {
                 ))}
 
             </div>
-            <button className={styles.button}>Load More</button>
+            <div className={styles.buttonContainer}>
+                <button className={styles.button}>Load More</button>
+            </div>
+         
         </div>
      );
 }
