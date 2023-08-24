@@ -123,7 +123,7 @@ const Footer = () =>{
                 </Accordion>
             </div>
 
-            <div className={styles.bigFooter}>
+            {/* <div className={styles.bigFooter}>
                 <h2 className={styles.logo}>Congo</h2>
                 <div className={styles.content}>
                         <Select
@@ -188,7 +188,7 @@ const Footer = () =>{
                  Congo.com is not the owner, operator, advertiser or promoter of the listed products and services. Information on listed products and services, including Covid-safe accreditations, are provided by the third-party operator on their website. Rates are indicative based on the minimum and maximum available prices of products and services. Please visit the operator’s website for further information. All prices quoted are in US dollars (USD). Congo.com makes no representations whatsoever about any other websites which you may access through its websites such as Congo.com. Some websites which are linked to the Tourism Australia website are independent from Congo.com and are not under the control of Congo.com. Congo.com does not endorse or accept any responsibility for the use of websites which are owned or operated by third parties and makes no representation or warranty in relation to the standard, class or fitness for purpose of any services, nor does it endorse or in any respect warrant any products or services by virtue of any information, material or content linked from or to this site.
                 </div>
                 <p className={styles.copyright}>© Congo.com 2023</p>
-            </div>
+            </div> */}
 
         </div>
 

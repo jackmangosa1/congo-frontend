@@ -40,7 +40,7 @@
 
 @media screen and (min-width: 992px){
     .smallFooter{
-        display: none;
+        /* display: none; */
     }
     .bigFooter{
         display: flex;

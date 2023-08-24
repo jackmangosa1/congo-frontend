@@ -50,7 +50,7 @@ const EventCalender = () => {
                 callToAction={data.callToAction}
                 className={styles.squareCard}
             />
-            <span>Featured Events</span>
+            <span className={styles.title}>Featured Events</span>
             <div className={styles.eventFiltersContainer}>
                 <TextInput
                 icon={<UilSearch size="17"/>}
@@ -74,7 +74,7 @@ const EventCalender = () => {
                     onClick={showCalendar}
                 />
                 {isCalendarVisible && (
-                    <Calendar/>
+                    <Calendar className={styles.calendar}/>
                 )}
             </div>
             <Events/>

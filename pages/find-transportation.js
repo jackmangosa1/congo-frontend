@@ -32,7 +32,7 @@ const FindTransportation = () => {
 
     return ( 
         <div className={styles.container}>
-            <Image src="/road.jpg" height={300} width={500}/>
+            <Image src="/road.jpg" height={300} width={500} className={styles.image}/>
             <span className={styles.title}>Find transportation</span>
             <p className={styles.description}> 
                 Whether you hop on a ferry or hire a car, it’s easy to get around Congo. No matter your budget or schedule, you'll find a transportation option ideal for your itinerary. Choose from buses, cruises, cars and more to travel further and explore more.

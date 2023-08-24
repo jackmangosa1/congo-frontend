@@ -8,6 +8,9 @@ const Events = () => {
         {id: 1, title: 'Box Match', image: '/box.jpg', date: '11 September 2023', place: 'Kisangani DRC', link: '/event-page' },
         {id: 2, title: 'Climate conference', image: '/conference.jpg', date: '11 September 2023', place: 'GOMA DRC', link: '/event-page'  },
         {id: 3, title: 'Fally Concert', image: '/concert.jpg', date: '15 December 2023', place: 'Kinshasa DRC', link: '/event-page'  },
+        {id: 4, title: 'Box Match', image: '/box.jpg', date: '11 September 2023', place: 'Kisangani DRC', link: '/event-page' },
+        {id: 5, title: 'Climate conference', image: '/conference.jpg', date: '11 September 2023', place: 'GOMA DRC', link: '/event-page'  },
+        {id: 6, title: 'Fally Concert', image: '/concert.jpg', date: '15 December 2023', place: 'Kinshasa DRC', link: '/event-page'  },
       ]
 
     return ( 

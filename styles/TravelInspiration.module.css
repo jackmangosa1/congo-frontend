@@ -1,79 +1,90 @@
-.container{
+.container >:not(:first-child){
     position: relative;
+    padding: 1.5rem;
 }
-
 .hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
+    margin-bottom: 2rem;
 }
-
 .heroImage{
+    width: 100%;
+    height: calc(40vw + 10rem);
     position: relative;
 }
-
-.overlay{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.1);
-}
-
 .heroText{
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 5rem;
-    left: 10rem;
+    top: 14rem;
 }
-
 .heroText span:nth-child(1){
     color: white;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.5rem;
     font-weight: bold;
 }
-
 .heroText span:nth-child(2){
     font-family: 'Kalam', cursive;
     margin-left: 1rem;
     font-size: 3rem;
     font-weight: bold;
 }
-
-.main {
-    padding: 1.5rem;
-    line-height: 1.67;
-    position: relative;
-}
-
-.main span{
-    font-size: 1.25rem;
+.title{
     font-weight: bold;
+    font-size: 1.3rem;
 }
-
-.main p{
-    margin-top: 1rem;
+.description{
     color: var(--themeGray);
 }
-
 .videoContainer{
     position: relative;
+    font-weight: bold;
 }
-
 .video{
     margin-top: 1rem;
     border-radius: 0.5rem;
-    height: 20rem;
-    width: 35rem;
+    width: 100%;
+    height: calc(30vh + 10rem);
+    object-fit: cover;
+    width: calc(20vw + 30rem);
 }
 
 .playVideo{
     display: flex;
+    align-items: center;
     gap: 0.5rem;
     position: absolute;
     bottom: 2rem;
-    left: 1rem;
+    left: 2rem;
     color: white;
     cursor: pointer;
 }
+
+@media screen and (min-width: 1030px) {
+   .heroImage{
+    height: 90vh;
+   }
+   .heroText span:nth-child(1){
+    font-size: 3rem;
+    }
+    .heroText span:nth-child(2){
+    font-size: 4rem;
+    }
+}
+
+@media screen and (min-width: 1230px){
+    .main{
+        display: flex;
+        align-items: flex-start;
+    }
+    .video{
+        object-fit: contain;
+    }
+    .playVideo{
+        left: 6rem;
+    }
+}
+

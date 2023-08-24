@@ -1,14 +1,21 @@
 .container{
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 4rem;
     padding: 1.5rem;
 }
+.accomodation{
+    position: relative;
+}
+
 .title{
+    display: block;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 1.5rem;
 }
 .accommodationImage{
+    width: calc(15vw + 20rem);
+    height: calc(15vw + 10rem);
     margin-top: 0.5rem;
     border-radius: 0.5rem;
 }
@@ -18,9 +25,12 @@
     gap: 1rem;
     color: var(--themeGray);
 }
+.bigTopTipContainer{
+    display: none;
+}
 .topTip{
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 1rem 1rem;
     display: flex;
     gap: 1rem;
     background-color: var(--themeGrayBg);
@@ -105,3 +115,47 @@
     cursor: pointer;
     background-color: var(--themeBlue);
   }
+
+  @media screen and (min-width: 1025px) {
+    .container{
+        align-items: center;
+    }
+    .accomodation{
+        width: calc(15vw + 20rem);;
+    } 
+    .topTip{
+        display: none;
+    }
+    .bigTopTipContainer{
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    
+    }
+    .bigTopTip{
+        background-color: var(--themeGrayBg);
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 18rem;
+        padding: 2rem;
+        border-radius: 0.5rem;
+    }
+    .accomodation:nth-child(odd) .bigTopTipContainer {
+        right: -24rem;
+    }
+    
+    
+    .accomodation:nth-child(even) .bigTopTipContainer {
+        left: -24rem;
+    }
+    .accomodation:nth-child(even) .arrow {
+        position: absolute;
+        right: -4rem;
+        transform: rotate(180deg);
+    }
+}
+    
+  

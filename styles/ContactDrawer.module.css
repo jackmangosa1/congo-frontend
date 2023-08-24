@@ -32,14 +32,18 @@
 .mantine-Input.Wrapper-label{
     color: var(--themeBlue)!important;
 }
-
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+}
 .button{
+    margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: max-content;
     height: 3rem;
-    padding: 0 1rem;
+    padding: 0 3rem;
     border-radius: 0.5rem;
     border: none;
     color: white;

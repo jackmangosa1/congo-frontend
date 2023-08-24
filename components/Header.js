@@ -10,8 +10,6 @@ import { useDisclosure } from '@mantine/hooks';
 import { Drawer } from '@mantine/core';
 
 
-
-
 const Header = () =>{
 
     const router = useRouter()
@@ -24,7 +22,7 @@ const Header = () =>{
 
     const inspirationData = [
         {id: 1, title: 'Say mbote!', image: '/inspiration/animals.jpg', link:'/travel-inspiration'},
-        {id: 2, title: 'Discover Congo', image: '/Rwenzori.jpg', link: ''},
+        {id: 2, title: 'Discover Congo', image: '/Rwenzori.jpg', link: '/deals-and-travel-packages'},
         {id: 3, title: 'Deals and offer', image: '/Tchegera.jpg', link: '/deals-and-travel-packages'},
       ]
       
@@ -59,9 +57,9 @@ const Header = () =>{
                 <ul className={styles.list}>
                     <li className={styles.item} onClick={openDrawer1}>
                         Be inspired
-                        <UilAngleDown size="30" onClick={openDrawer2}/>
+                        <UilAngleDown size="30"/>
                     </li>
-                    <li className={styles.item} onClick={openDrawer3}>
+                    <li className={styles.item} onClick={openDrawer2}>
                         Places to go
                         <UilAngleDown size="30"/>
                     </li>

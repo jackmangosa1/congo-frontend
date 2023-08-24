@@ -11,9 +11,9 @@ const Agency = () => {
         setIsDrawerOpen(true)
     }
     const agencies= [
-        {id: 1, title: 'African Travel', image: '/logo1.png', email:'africantravel@gmail.com', link: 'https://africantravelinc.com/'},
-        {id: 2, title: 'Congo tours', image: '/logo2.png', email:'congotours@gmail.com', link: 'https://www.globalbushtratour.com/'},
-        {id: 3, title: 'Safari travel', image: '/logo1.png', email:'safaritravel@gmail.com', link: 'https://africantravelinc.com/'},
+        {id: 1, title: 'African Travel', image: '/logo1.png', description: 'As the longest established luxury safari operator focused exclusively on the African continent, African Travel, Inc. is dedicated to creating the ultimate African experience' ,link: 'https://africantravelinc.com/'},
+        {id: 2, title: 'Congo tours', image: '/logo1.png', description: 'As the longest established luxury safari operator focused exclusively on the African continent, African Travel, Inc. is dedicated to creating the ultimate African experience', link: 'https://www.globalbushtratour.com/'},
+        {id: 3, title: 'Safari travel', image: '/logo1.png', description: 'As the longest established luxury safari operator focused exclusively on the African continent, African Travel, Inc. is dedicated to creating the ultimate African experience', link: 'https://africantravelinc.com/'},
     ]
     return (  
         <div className={styles.container}>
@@ -21,17 +21,17 @@ const Agency = () => {
                 <div className={styles.agency}>
                     <div className={styles.info}>
                         <Image src={agency.image} height={70} width={70} className={styles.image}/>
-                        <span className={styles.agencyName}>{agency.title}</span>
-                    </div>
-                    <span className={styles.email}>{agency.email}</span>
-                    
-                    <div className={styles.buttons}>
-                        <Link className={styles.button} href={agency.link}>
-                            Website
-                        </Link>
-                        <button className={styles.button} onClick={handleDrawerOpen}>Contact</button>
+                        <div className={styles.rightSide}>
+                            <span className={styles.agencyName}>{agency.title}</span>
+                            <span className={styles.description}>{agency.description}</span>
+
+                            <div className={styles.buttonContainer}>
+                                <button className={styles.button} onClick={handleDrawerOpen}>Contact</button>
+                            </div>
+                        </div>
                      
                     </div>
+                    
                     <ContactDrawer isDrawerOpen={isDrawerOpen} closeDrawer={()=> setIsDrawerOpen(false)}/>
                 </div>
             ))}

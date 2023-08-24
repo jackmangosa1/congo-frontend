@@ -13,21 +13,27 @@ const Trip = () => {
         const router = useRouter()
         
     return ( 
-        <div>
-            {data.map( trip =>(
-                <div className={styles.trips} onClick={()=> router.push(trip.link)}>
-                    <Image src={trip.image} height={200} width={400} className={styles.image}/>
-                    <span className={styles.title}>{trip.title}</span>
-                    <div className={styles.categories}>
-                        {trip.categories.map( category =>(
-                            <span className={styles.category}>{category}</span>
-                        ))}
-                    </div>
-                    <span>{trip.description}</span>
+        <div className={styles.container}>
+            <div className={styles.trips}>
+                {data.map( trip =>(
+                    <div className={styles.trip} onClick={()=> router.push(trip.link)}>
+                        <Image src={trip.image} height={200} width={400} className={styles.image}/>
+                        <span className={styles.title}>{trip.title}</span>
+                        <div className={styles.categories}>
+                            {trip.categories.map( category =>(
+                                <span className={styles.category}>{category}</span>
+                            ))}
+                        </div>
+                        <span className={styles.description}>{trip.description}</span>
 
-                </div>
-            ))}
-            <button className={styles.button}>Load More</button>
+                    </div>
+                ))}
+            </div>
+            <div className={styles.buttonWrapper}>
+                <button className={styles.button}>Load More</button>
+            </div>
+            
+          
         </div>
      );
 }

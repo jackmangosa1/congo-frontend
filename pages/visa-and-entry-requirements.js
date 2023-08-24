@@ -7,7 +7,7 @@ import Link from "next/link";
 const VisaAndEntry = () => {
     return ( 
         <div className={styles.container}>
-            <Image src="/Entry.jpg" height={300} width={500}/>
+            <Image src="/Entry.jpg" height={300} width={500} className={styles.image}/>
             <span className={styles.title}>CONGOLESE VISA AND ENTRY REQUIREMENTS FAQS</span>
             <p className={styles.description}>
                 Learn about visa requirements for entry to Australia for tourism purposes with this list of frequently asked questions. 

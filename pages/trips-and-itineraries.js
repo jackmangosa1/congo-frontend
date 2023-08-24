@@ -14,7 +14,7 @@ const TripsAndItineraries = () => {
 
     return ( 
         <div className={styles.container}>
-           <Image src="/road.jpg" height={300} width={500} /> 
+           <Image src="/road.jpg" height={300} width={500} className={styles.heroImage}/> 
            <span className={styles.title}>Trips and itineraries</span>
            <span className={styles.description}>Discover the journey of a lifetime in Australia.</span>
            

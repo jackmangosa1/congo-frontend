@@ -1,12 +1,21 @@
 .trips{
     margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    gap: 3rem ;
+    flex-direction: column;
 }
-
+.trip{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
 .image{
+    width: calc(10vw + 20rem);
+    height: calc(5vh + 12rem);
     border-radius: 0.5rem;
     margin-bottom: 0.5rem;
 }
-
 .title{
     font-size: 1.2rem;
     color: var(--themeBlue);
@@ -23,11 +32,16 @@
 .category:not(:last-child)::after{
     content: '  •';
 }
-
+.description{
+    width: calc(10vw + 20rem);
+}
+.buttonWrapper{
+    display: flex;
+    justify-content: center;
+}
 .button{
     margin-top: 1rem;
-    margin-left: 10rem;
-    padding: 1rem;
+    padding: 1rem 2rem;
     border-radius: 0.5rem;
     border: none;
     color: white;
@@ -35,6 +49,16 @@
     font-size: 1rem;
     cursor: pointer;
     background-color: var(--themeBlue);
+  }
+  
+
+  @media screen and (min-width: 790px) {
+    .trips{
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        flex-wrap: wrap;
+    }
   }
 
 

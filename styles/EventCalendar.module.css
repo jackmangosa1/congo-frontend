@@ -1,6 +1,6 @@
 .heroVideo{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     object-fit: cover;
 }
 
@@ -12,7 +12,7 @@
     display: grid;
     place-items: center;
     font-family: 'Bebas Neue', sans-serif;
-    font-size: 2.3rem;
+    font-size: calc(1vw + 2.3rem);
 }
 
 .mainText span:nth-child(2){
@@ -58,3 +58,37 @@
     background-color: var(--themeBlue);
   }
 
+  @media screen and (min-width: 775px) {
+    .heroVideo{
+        height: 90vh;
+    }
+    .mainText span:nth-child(1){
+        font-size: calc(2vw + 2.3rem);
+    }
+  }
+@media screen and (min-width: 1015px) {
+    .title{
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 1.5rem;
+        margin-top: 3rem;
+    }
+    .eventFiltersContainer{
+        position: relative;
+        flex-direction: row;
+    }
+    .eventFiltersContainer > * {
+        flex: 1;
+    }
+    .buttonWrapper{
+        margin: 2rem 2rem;
+    }
+    .calendar{
+        position: absolute;
+        top: 5rem;
+        right: 2rem;
+        background-color: var(--themeGrayBg);
+        padding: 1rem;
+        border-radius: 0.5rem;
+    }
+}

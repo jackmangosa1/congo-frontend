@@ -43,33 +43,32 @@ const  TravelInspiration = () => {
     return ( 
         <div className={styles.container}>
             <div className={styles.hero}>
-                <Image src={come} height={300} width={500} className={styles.heroImage}/>
-                <div className={styles.overlay}></div>
-                
+                <Image src={come} height={300} width={500} className={styles.heroImage}/>                
                 <div className={styles.heroText}>
                     <span>Come and say</span>
                     <span>Mbote!</span>
                 </div>
                
             </div>
-
             <div className={styles.main}>
-                <span className={styles.mainTitle}>Kick off the holiday of a lifetime.</span>
-                <p>There's no better time to experience the magic of Congo. So, pack your bags and get ready to say "Mbote" to a land brimming with wonders and warm hospitality.</p>
-                <p>Watch our exclusive short film, showcasing the beauty and allure of Congo.</p>
-
+                <div>
+                    <p className={styles.title}>Kick off the holiday of a lifetime.</p>
+                    <p className={styles. description}>There's no better time to experience the magic of Congo. So, pack your bags and get ready to say "Mbote" to a land brimming with wonders and warm hospitality. Watch our exclusive short film, showcasing the beauty and allure of Congo.</p>
+                </div>
+               
                 <div className={styles.videoContainer}>
                     <video src="/Congo.mp4"  ref={videoRef} controls={showControl} className={styles.video}/>
                     {showControl === false && (
-                         <div className={styles.playVideo} onClick={handleWatchVideo}>
-                         <UilPlayCircle size="30" color="white"/>
-                         <span>Watch the video</span>
-                     </div>
+                        <div className={styles.playVideo} onClick={handleWatchVideo}>
+                            <UilPlayCircle size="30" color="white"/>
+                            <span>Watch the video</span>
+                        </div>
                     )}
-                   
                 </div>
             </div>
-
+           
+          
+            
             <SquareCard image={QuizData.image} title={QuizData.title} description={QuizData.description} callToAction={QuizData.callToAction}/>
             <Cards items={thingsToDo} title="Start your next Adventure"/>
             <Cards items={placesToGo} title="Explore host destinations"/>

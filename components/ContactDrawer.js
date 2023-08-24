@@ -33,8 +33,10 @@ const ContactDrawer = ({isDrawerOpen, closeDrawer}) => {
                 <NumberInput label="Adult traveller" required/>
                 <NumberInput label="Traveller under 18" required/>
             </div>
-
-            <button className={styles.button}>Send Email</button>
+            <div className={styles.buttonWrapper}>
+              <button className={styles.button}>Send Email</button>
+            </div>
+            
 
         </div>
 

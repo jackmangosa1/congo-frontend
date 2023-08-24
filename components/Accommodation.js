@@ -1,7 +1,8 @@
 import Image from "next/image";
 import styles from "../styles/Accommodation.module.css"
-import { UilCamera,  UilArrowUpRight } from '@iconscout/react-unicons'
+import { UilCamera,  UilArrowUpRight, UilCornerUpLeft, UilCornerUpRight  } from '@iconscout/react-unicons'
 import Link from "next/link";
+
 const Accommodation = () => {
     const data = [
         {
@@ -43,37 +44,53 @@ const Accommodation = () => {
 
     return ( 
         <div className={styles.container}>
-            {data.map( accommodation =>(
-                <div>
-                    <span className={styles.title}>{accommodation.title}</span>
-                    <Image src={accommodation.image} height={300} width={500} className={styles.accommodationImage}/>
-                    <div className={styles.reference}>
-                        <UilCamera size="20" color="var(--themeGray)"/>
-                        <span>{accommodation.source}</span>
-                    </div>
-                    <div className={styles.topTip}>
-                        <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage}/>
-                        <div className={styles.tipText}>
-                            <span>Top Tip</span>
-                            <p>{accommodation.topTipText}</p>
+            {data.map( accommodation =>{
+                return (
+                    <div className={styles.accomodation}>
+                        <span className={styles.title}>{accommodation.title}</span>
+                        <Image src={accommodation.image} height={300} width={500} className={styles.accommodationImage} />
+                        <div className={styles.reference}>
+                            <UilCamera size="20" color="var(--themeGray)" />
+                            <span>{accommodation.source}</span>
                         </div>
-                    </div>
-                    <p>{accommodation.description}</p>
-                    <div className={styles.redirection}>
-                        <Image src={accommodation.smallImage} height={100} width={150}/>
-                        <div className={styles.rightSide}>
-                            <span>{accommodation.title}</span>
-                            <Link href={accommodation.link} target="_blank">
-                                <div className={styles.price}>
-                                    From <span>{accommodation.price}</span>
-                                    <UilArrowUpRight size="25" className={styles.redirectIcon}/>
+                        <div className={styles.bigTopTipContainer}>
+                            <Image src="/curved-arrow-right.svg" height={100} width={50} className={styles.arrow}/>
+                        
+                            <div className={styles.bigTopTip}>
+                                
+                                <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage} />
+                                <div className={styles.tipText}>
+                                    <span>Top Tip</span>
+                                    <p>{accommodation.topTipText}</p>
                                 </div>
-                            </Link>
-                           
+                            </div>
+                        </div>
+                       
+
+                        <div className={styles.topTip}>
+                            <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage} />
+                            <div className={styles.tipText}>
+                                <span>Top Tip</span>
+                                <p>{accommodation.topTipText}</p>
+                            </div>
+                        </div>
+                        <p>{accommodation.description}</p>
+                        <div className={styles.redirection}>
+                            <Image src={accommodation.smallImage} height={100} width={150} />
+                            <div className={styles.rightSide}>
+                                <span>{accommodation.title}</span>
+                                <Link href={accommodation.link} target="_blank">
+                                    <div className={styles.price}>
+                                        From <span>{accommodation.price}</span>
+                                        <UilArrowUpRight size="25" className={styles.redirectIcon} />
+                                    </div>
+                                </Link>
+
+                            </div>
                         </div>
                     </div>
-                </div>
-            ))}
+                );
+            })}
             
         </div>
      );

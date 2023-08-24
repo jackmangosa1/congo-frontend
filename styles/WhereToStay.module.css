@@ -1,15 +1,25 @@
+.container > :not(:first-child){
+    padding: 1.5rem;
+    margin-right: 1.5rem;
+}
+.image{
+    width: 100%;
+    height: calc(22vw + 50vh);
+}
+
 .title{
+    margin-top: 2rem;
     font-family: 'Bebas Neue', sans-serif;
     font-size: 2.3rem;
-    padding: 1.5rem;
     display: flex;
     justify-content: center;
 }
 
 .description{
+    padding: 1.5rem;
     display: flex;
     justify-content: center;
     color: var(--themeGray);
-    padding: 0 1.5rem;
     margin-bottom: 2rem;
 }
+

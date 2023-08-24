@@ -11,7 +11,7 @@ const FindAccommodation = () => {
       ]
     return ( 
         <div>
-            <Image src="/accommodation.jpg" height={300} width={500}/>
+            <Image src="/accommodation.jpg" height={300} width={500} className={styles.image}/>
             <span className={styles.title}>Find accommodation</span>
             <p className={styles.description}>
             From luxury suites with every amenity to affordable art-filled hotels and beachside family apartments, Adelaide has accommodation to suit every taste and budget.
