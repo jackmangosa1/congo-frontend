@@ -6,6 +6,7 @@ const FoodAndDrinks = () => {
     const router = useRouter()
     const data = [
         {
+            id: 1,
             title:'Ntaba na Kwanga', 
             image:'/thingsToDo/food.jpg', 
             source:'EOS by SkyCity, Adelaide, South Australia © SkyCity',
@@ -14,6 +15,7 @@ const FoodAndDrinks = () => {
         },
 
         {
+            id: 2,
             title:'Poulet mayo', 
             image:'/food2.jpg', 
             source:'EOS by SkyCity, Adelaide, South Australia © SkyCity',
@@ -22,6 +24,7 @@ const FoodAndDrinks = () => {
         },
 
         {
+            id: 3,
             title:'Ntaba na Kwanga', 
             image:'/thingsToDo/food.jpg', 
             source:'EOS by SkyCity, Adelaide, South Australia © SkyCity',
@@ -33,7 +36,7 @@ const FoodAndDrinks = () => {
     return ( 
         <div className={styles.container}>
             {data.map( dish =>(
-                <div>
+                <div key={dish.id}>
                     <span className={styles.title}>{dish.title}</span>
                     <Image src={dish.image} height={450} width={450} className={styles.accommodationImage}/>
                     <div className={styles.reference}>

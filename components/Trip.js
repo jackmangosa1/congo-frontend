@@ -16,12 +16,12 @@ const Trip = () => {
         <div className={styles.container}>
             <div className={styles.trips}>
                 {data.map( trip =>(
-                    <div className={styles.trip} onClick={()=> router.push(trip.link)}>
+                    <div className={styles.trip} onClick={()=> router.push(trip.link)} key={trip.id}>
                         <Image src={trip.image} height={200} width={400} className={styles.image}/>
                         <span className={styles.title}>{trip.title}</span>
                         <div className={styles.categories}>
                             {trip.categories.map( category =>(
-                                <span className={styles.category}>{category}</span>
+                                <span className={styles.category} key={category.id}>{category}</span>
                             ))}
                         </div>
                         <span className={styles.description}>{trip.description}</span>

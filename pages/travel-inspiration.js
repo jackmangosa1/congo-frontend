@@ -43,7 +43,7 @@ const  TravelInspiration = () => {
     return ( 
         <div className={styles.container}>
             <div className={styles.hero}>
-                <Image src={come} height={300} width={500} className={styles.heroImage}/>                
+                <Image src={come} height={300} width={500} className={styles.heroImage} alt=""/>                
                 <div className={styles.heroText}>
                     <span>Come and say</span>
                     <span>Mbote!</span>
@@ -53,7 +53,7 @@ const  TravelInspiration = () => {
             <div className={styles.main}>
                 <div>
                     <p className={styles.title}>Kick off the holiday of a lifetime.</p>
-                    <p className={styles. description}>There's no better time to experience the magic of Congo. So, pack your bags and get ready to say "Mbote" to a land brimming with wonders and warm hospitality. Watch our exclusive short film, showcasing the beauty and allure of Congo.</p>
+                    <p className={styles. description}>There&apos;s no better time to experience the magic of Congo. So, pack your bags and get ready to say &quot;Mbote&quot; to a land brimming with wonders and warm hospitality. Watch our exclusive short film, showcasing the beauty and allure of Congo.</p>
                 </div>
                
                 <div className={styles.videoContainer}>

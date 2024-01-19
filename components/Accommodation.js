@@ -6,6 +6,7 @@ import Link from "next/link";
 const Accommodation = () => {
     const data = [
         {
+            id: 1,
             title:'Serena Hotel', 
             image:'/room1.jpg', 
             source:'EOS by SkyCity, Adelaide, South Australia © SkyCity',
@@ -18,6 +19,7 @@ const Accommodation = () => {
         },
 
         {
+            id: 2,
             title:'Rotanna Hotel', 
             image:'/room2.jpg', 
             source:'EOS by SkyCity, Adelaide, South Australia © SkyCity',
@@ -30,6 +32,7 @@ const Accommodation = () => {
         },
 
         {
+            id: 3,
             title:'Pullman Hotel', 
             image:'/room2.jpg', 
             source:'EOS by SkyCity, Adelaide, South Australia © SkyCity',
@@ -46,19 +49,19 @@ const Accommodation = () => {
         <div className={styles.container}>
             {data.map( accommodation =>{
                 return (
-                    <div className={styles.accomodation}>
+                    <div className={styles.accomodation} key={accommodation.id}>
                         <span className={styles.title}>{accommodation.title}</span>
-                        <Image src={accommodation.image} height={300} width={500} className={styles.accommodationImage} />
+                        <Image src={accommodation.image} height={300} width={500} className={styles.accommodationImage} alt="" />
                         <div className={styles.reference}>
                             <UilCamera size="20" color="var(--themeGray)" />
                             <span>{accommodation.source}</span>
                         </div>
                         <div className={styles.bigTopTipContainer}>
-                            <Image src="/curved-arrow-right.svg" height={100} width={50} className={styles.arrow}/>
+                            <Image src="/curved-arrow-right.svg" height={100} width={50} className={styles.arrow} alt=""/>
                         
                             <div className={styles.bigTopTip}>
                                 
-                                <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage} />
+                                <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage} alt=""/>
                                 <div className={styles.tipText}>
                                     <span>Top Tip</span>
                                     <p>{accommodation.topTipText}</p>
@@ -68,7 +71,7 @@ const Accommodation = () => {
                        
 
                         <div className={styles.topTip}>
-                            <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage} />
+                            <Image src={accommodation.topTipImage} height={90} width={90} className={styles.tipImage} alt="" />
                             <div className={styles.tipText}>
                                 <span>Top Tip</span>
                                 <p>{accommodation.topTipText}</p>
@@ -76,7 +79,7 @@ const Accommodation = () => {
                         </div>
                         <p>{accommodation.description}</p>
                         <div className={styles.redirection}>
-                            <Image src={accommodation.smallImage} height={100} width={150} />
+                            <Image src={accommodation.smallImage} height={100} width={150}  alt=""/>
                             <div className={styles.rightSide}>
                                 <span>{accommodation.title}</span>
                                 <Link href={accommodation.link} target="_blank">

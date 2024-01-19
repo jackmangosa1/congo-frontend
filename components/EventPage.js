@@ -10,7 +10,7 @@ const Event = () => {
             <span className={styles.date}>23 September 2022 - 23 September 2023</span>
             <button className={styles.button}>Book Now</button>
             <p className={styles.description}>
-            Whip out to Winton this September for Australia’s quirkiest event, the Outback Festival. Five days of quintessential outback fun will take over the Outback Queensland town of Winton from 19 – 23 September, during the Queensland school holidays. The festival's signature event, the Quilton Australian Dunny Derby, will top off five days of outback celebrations including warm Outback hospitality and nightly live entertainment. Sports fans can test their skills in the True Blue Aussie Sports, Outba...
+            Whip out to Winton this September for Australia&apos;s quirkiest event, the Outback Festival. Five days of quintessential outback fun will take over the Outback Queensland town of Winton from 19 – 23 September, during the Queensland school holidays. The festival&apos;s signature event, the Quilton Australian Dunny Derby, will top off five days of outback celebrations including warm Outback hospitality and nightly live entertainment. Sports fans can test their skills in the True Blue Aussie Sports, Outba...
             </p>
             <div className={styles.readMore}>
                 <span>Read more</span>

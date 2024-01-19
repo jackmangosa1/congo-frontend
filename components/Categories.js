@@ -16,7 +16,7 @@ const Categories = () => {
     return ( 
         <div className={styles.container}>
             {inspirationData.map(item =>(
-                <div className={styles.category} onClick={() => router.push(item.link)}>
+                <div className={styles.category} onClick={() => router.push(item.link)} key={item.id}>
                     <div className={styles.categoryImageContainer}>
                         <Image src={item.image} alt="categoty-image" height={130} width={200} className={styles.categoryImage}/>
                         <span className={styles.categoryTitle}>{item.title}</span>

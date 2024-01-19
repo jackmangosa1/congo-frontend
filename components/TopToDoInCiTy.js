@@ -41,7 +41,7 @@ const TopToDoInCity = () => {
                 className={styles.toDos}
             >
             {thingsToDo.map( thing => (
-                <SwiperSlide className={styles.slide} onClick={() => thing.link && router.push(thing.link) }>
+                <SwiperSlide className={styles.slide} onClick={() => thing.link && router.push(thing.link) } key={thing.id}>
                     <Image src={thing.image} width={350} height={300} className={styles.thingImage} />
                     <span className={styles.thingTitle}>{thing.title}</span>
                     <span className={styles.thingDescription}>{thing.description}</span>

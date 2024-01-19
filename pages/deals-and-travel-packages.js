@@ -9,7 +9,7 @@ const Packages = () => {
       ]
     return ( 
         <div className={styles.container}>
-            <Image src="/agent.jpg" height={300} width={500} className={styles.image}/>
+            <Image src="/agent.jpg" height={300} width={500} className={styles.image} alt=""/>
             <span className={styles.title}>DEALS AND TRAVEL PACKAGES</span>
             <p className={styles.description}>
 Looking for a travel deal? Check out these deals and special offers to make your Congolese holiday effortless and unforgettable. Terms and conditions apply.</p>

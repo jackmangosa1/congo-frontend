@@ -17,7 +17,7 @@ const Cards = ({items, categories, title }) => {
             {categories && (
                 <div className={styles.categories}>
                 {categories.map( category =>(
-                    <div className={styles.category}>{category.title}</div>
+                    <div className={styles.category} key={category.id}>{category.title}</div>
                 ))}
 
             </div>
@@ -52,7 +52,7 @@ const Cards = ({items, categories, title }) => {
             }}
             >
             {items.map( item => (
-                <SwiperSlide className={styles.slide} onClick={() => item.link && router.push(item.link) }>
+                <SwiperSlide className={styles.slide} onClick={() => item.link && router.push(item.link)} key={item.id}>
                     <Image  className={styles.placeImage} src={item.image} width={350} height={400}/>
                     <span className={styles.placeTitle}>{item.title}</span>
                     

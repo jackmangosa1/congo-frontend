@@ -28,7 +28,7 @@ const Carousel = () =>{
             >
 
             {inspirationData.map( item => (
-                <SwiperSlide className={styles.slide}>
+                <SwiperSlide className={styles.slide} key={item.id}>
                     <Image src={item.image} width={440} height={250} className={styles.image}/>
                 </SwiperSlide>
                      

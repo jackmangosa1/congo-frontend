@@ -18,11 +18,11 @@ const VisaAndEntry = () => {
             <div className={styles.tipsContainer}>
                 
                 <ul className={styles.tips}>
-                <p>Ready to plan your trip? We're ready to welcome you! Here are some helpful tips for getting your visa sorted:</p>
+                <p>Ready to plan your trip? We&apos;re ready to welcome you! Here are some helpful tips for getting your visa sorted:</p>
                     <li>Be sure to secure the appropriate visa before travelling to Australia. Use the Visa Finder to explore your options.</li>
                     <li>Ensure all details are correct and provide all required documents when you apply. An incomplete or incorrect application can delay your visa.</li>
                     <li>Submitting multiple applications at the same time can slow the process. For visitor visas, submit one application per person, including children. </li>
-                    <li>Questions? The Australian Government's Global Service Centre can help</li>
+                    <li>Questions? The Australian Government&apos;s Global Service Centre can help</li>
                 </ul>
 
                 <div className={styles.accordionContainer}>

@@ -25,7 +25,7 @@ const TripPage = ({title, description}) => {
             >
 
             {thingsToDo.map( item => (
-                <SwiperSlide className={styles.slide}>
+                <SwiperSlide className={styles.slide} key={item.id}>
                     <Image src={item.image} width={500} height={300} className={styles.image}/>
                 </SwiperSlide>
                      
@@ -34,7 +34,7 @@ const TripPage = ({title, description}) => {
     
             <span className={styles.title}>Park de la Nsele</span>
             <p className={styles.description}>
-            Whip out to Winton this September for Australia’s quirkiest event, the Outback Festival. Five days of quintessential outback fun will take over the Outback Queensland town of Winton from 19 – 23 September, during the Queensland school holidays. The festival's signature event, the Quilton Australian Dunny Derby, will top off five days of outback celebrations including warm Outback hospitality and nightly live entertainment. Sports fans can test their skills in the True Blue Aussie Sports, Outba...
+            Whip out to Winton this September for Australia&apos;s quirkiest event, the Outback Festival. Five days of quintessential outback fun will take over the Outback Queensland town of Winton from 19 – 23 September, during the Queensland school holidays. The festival&apos;s signature event, the Quilton Australian Dunny Derby, will top off five days of outback celebrations including warm Outback hospitality and nightly live entertainment. Sports fans can test their skills in the True Blue Aussie Sports, Outba...
             </p>
             <button className={styles.button}>Visit la Nsele</button>
         

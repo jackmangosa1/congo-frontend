@@ -18,7 +18,7 @@ const Agency = () => {
     return (  
         <div className={styles.container}>
             {agencies.map( agency => (
-                <div className={styles.agency}>
+                <div className={styles.agency} key={agency.id}>
                     <div className={styles.info}>
                         <Image src={agency.image} height={70} width={70} className={styles.image}/>
                         <div className={styles.rightSide}>
