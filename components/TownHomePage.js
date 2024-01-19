@@ -12,7 +12,7 @@ const TownHomePage = ({image, title, description}) => {
       ]
     return (  
         <div className={styles.container}>
-            <Image src={image} height={450} width={500}/>
+            <Image src={image} height={450} width={500} alt=""/>
             <span className={styles.title}>Guide to {title}</span>
             <p className={styles.description}>
             {description}
