@@ -17,8 +17,7 @@ const Hero = () => {
 
     return ( 
         <div className={styles.container}>
-            <iframe ></iframe>
-            <video src="https://vimeo.com/904472147?share=copy" autoPlay loop muted className={styles.heroVideo} crossorigin />
+            <video src="/Congo.mp4" autoPlay loop muted className={styles.heroVideo} crossorigin />
             <div className={styles.callToActionButton}>
                         <button className={styles.button} onClick={() => router.push('/travel-inspiration')}>Be inspired</button>
                         <button className={styles.button}>Find your own Adventure</button>
